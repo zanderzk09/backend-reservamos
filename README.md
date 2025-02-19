@@ -1,4 +1,4 @@
-# CHALLENGE FRONTEND RESERVAMOS
+# CHALLENGE BACKEND RESERVAMOS
 
 
 _En este proyecto cree una api que combina las funcionalidades de la api de OpenWeather para obtener el clima y la funcionalidad de la api de Reservamos para obtener las ciudaes, ambas permiten recibir el clima de la ciudades más populares_
