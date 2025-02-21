@@ -4,7 +4,7 @@ import { apiWeather } from "../api/apiWeather.js";
 export const getCurrentWeather = async (req, res) => {
   try {
     const { data } = await apiWeather.get("", {
-      params: { lat: 25.6866, lon: -100.3161 },
+      params: { lat, lon },
     });
 
     const today = new Date().toISOString().split("T")[0];
@@ -25,6 +25,7 @@ export const getCurrentWeather = async (req, res) => {
     res.status(500).json({ message: "Error al obtener los datos del clima" });
   }
 };
+
 
 
 

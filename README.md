@@ -1,7 +1,7 @@
 # CHALLENGE BACKEND RESERVAMOS
 
 
-_En este proyecto cree una api que combina las funcionalidades de la api de OpenWeather para obtener el clima y la funcionalidad de la api de Reservamos para obtener las ciudaes, ambas permiten recibir el clima de la ciudades más populares_
+_En este proyecto cree una api que combina las funcionalidades de la api de OpenWeather para obtener el clima y la funcionalidad de la api de Reservamos para obtener las ciudades, ambas permiten recibir el clima de la ciudades más populares_
 
 
 ### Instalación 🔧
@@ -28,7 +28,7 @@ _En este proyecto cree una api que combina las funcionalidades de la api de Open
 - JavaScript
 - Axios
 - CORS
-- express
+- Express
 
 
 ## Autor ✒️
@@ -37,7 +37,7 @@ _Alexander Arrazate_
 
 ## Notas sobre la IA
 
-_Usé chatGPT para realizar algunas de las tareas más compleja como saber exactamente como iterar a través de la respueta que genera la API de OpenWeather y así desestructurar las propiedades_
+_Usé chatGPT para realizar algunas de las tareas más complejas como saber exactamente como iterar a través de la respueta que genera la API de OpenWeather y así desestructurar las propiedades_
 
 - PROMPTS: 
 - 1
@@ -72,7 +72,7 @@ esto es lo que regresa la API:
 ```
 - 2
 ```
-Simplifica esta funcioón lo mas posible, eliminando cosas innecesarias y redudantes sin perder funciónalidad: 
+Simplifica esta función lo mas posible, eliminando cosas innecesarias y redudantes sin perder funcionalidad: 
 export const getCurrentWeather = async () => {
 
   try {
@@ -97,7 +97,7 @@ export const getCurrentWeather = async () => {
 
 - 3
 ```
-Ahora necesito que valores anteriores de lat y long funcionen en esta funcuón para obtener el clima de la ciudad con esa lat y long: 
+Ahora necesito que los valores anteriores de lat y long funcionen en esta función para obtener el clima de la ciudad con esa lat y long: 
 export const getCurrentWeather = async (req, res) => {
   try {
     const { data } = await apiWeather.get("", {
